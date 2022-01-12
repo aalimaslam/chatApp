@@ -1,4 +1,4 @@
-const socket = io(`http://aalimchats.netlify.app:3000`,{ transports : ['websocket'] });
+const socket = io(`https://aalimchats.herokuapp.com:3000`,{ transports : ['websocket'] });
 const message = document.getElementById("message");
 const container = document.getElementById("message-container")
 const form  = document.getElementById("form");
