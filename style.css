@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background:#111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.container{
+    width:80%;
+
+}
+.message-container{
+    width:100%;
+}
+.message-container div{
+    padding:10px;
+    color:#111;
+    background:orange;
+    margin-top:5px;
+}
+.message-container div:nth-child(even){
+    color:orange;
+    border:.5px solid orange;
+    background:transparent
+}
+#form{
+    position: fixed;
+    bottom:10px;
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+}
+input,button{
+    padding:10px 30px;
+    background:transparent;
+    border: none;
+    outline:none;
+}
+input{
+    text-indent: 5px;
+    border:1px solid orange;
+    width:80%;
+    color:white;
+}
+button{
+    border:2px solid orange;
+    color:orange;
+    cursor: pointer;
+    transition: all .3s;
+}
+button:hover{
+    background:orange;
+    color:white;
+}

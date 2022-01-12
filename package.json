@@ -1,0 +1,30 @@
+{
+  "name": "chat-application",
+  "version": "1.0.0",
+  "description": "chat application",
+  "main": "server.js",
+  "scripts": {
+    "devStart":"nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aalimaslam/chatApp.git"
+  },
+  "keywords": [
+    "chat",
+    "chat",
+    "application"
+  ],
+  "author": "aalim aslam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aalimaslam/chatApp/issues"
+  },
+  "homepage": "https://github.com/aalimaslam/chatApp#readme",
+  "dependencies": {
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
