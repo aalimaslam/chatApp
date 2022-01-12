@@ -1,4 +1,4 @@
-const socket = io("http://localhost:3000",{ transports : ['websocket'] });
+const socket = io(`http://${location.host}:3000`,{ transports : ['websocket'] });
 const message = document.getElementById("message");
 const container = document.getElementById("message-container")
 const form  = document.getElementById("form");
@@ -15,7 +15,7 @@ form.addEventListener("submit", e=>{
     message.value = ''
 
 })
-
+const locationHost = location.host;
 //Handle When You Join The Chat
 socket.on('chat-message', data=>{
     appendMessage(`${data.name} : ${data.message}`)
